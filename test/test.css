@@ -1,0 +1,137 @@
+/* Global styles */
+* {
+    font-family: 'Figtree', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AF7AC5;
+    color: #fff;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tutors section styles */
+section {
+    margin-top: -200px;
+}
+#tutors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh; /* Use min-height instead of height to allow expansion */
+}
+
+#tutors h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tutor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tutor-card {
+    position: relative; /* Needed for absolute positioning of the video */
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 800px;
+}
+.tutor-info {
+    margin-left: 50px;
+}
+
+.tutor-card:hover .video-teaser {
+    display: flex; /* Show the video on hover */
+    flex-direction: row;
+    left: 825px;
+    margin-top: 0px;
+}
+.video-teaser {
+    display: none;
+    position:static;
+    right: 50px; /* Positioning it to the right of the tutor card */
+    top: 0;
+    width: 320px;
+    height: 240px;
+    border: 1px solid #000000; /* Optional, for better visibility */
+}
+/* Other styles... */
+
+
+
+
+
+
+#tutors button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #7159c1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 175px;
+}
+
+.view-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#tutors button:hover {
+    background-color: #806fb8;
+}
+
+#tutors .profile-pic img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Video teaser styles */
+.video-teaser {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+#tutors li:hover .video-teaser {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/*Footer Style*/
+footer{
+    background-color:#AF7AC5;
+    color: #fff;
+    text-align: center;
+}

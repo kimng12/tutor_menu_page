@@ -1,0 +1,161 @@
+/* General styling */
+body {
+    font-family: 'Figtree', sans-serif;
+}
+
+header, footer {
+    background-color: #AF7AC5; /* Replace with the actual color code */
+    color: white;
+    padding: 10px;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #AF7AC5; /* Replace with your color */
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #AF7AC5; /* Replace with your color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span,
+.user-info select {
+    margin-right: 10px;
+}
+
+.user-menu img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Hidden by default, shown on user interaction */
+}
+
+.user-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+.user-menu:hover ul {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Responsive design adjustments for navbar if needed */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar,
+    .user-info {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+.tutors h1, .video h2 {
+    background-color: #0000; /* Replace with the actual color code */
+}
+
+.tutors {
+    width: 70%;
+}
+
+.tutor {
+    background-color: #E5D4FF; /* Replace with the actual color code */
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.profile-pic {
+    background-color: #000000; /* Replace with the actual color code */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+button {
+    background-color: #D75684; /* Replace with the actual color code */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #821d42; /* Replace with the actual color code */
+}
+
+.teaser-videos {
+    width: 30%;
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    right: 0; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    z-index: 10;
+}
+.video {
+    background-color: rgb(225, 35, 102); /* Replace with the actual color code */
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+/* Video appears on tutor hover */
+.tutor:hover {
+    .teaser-videos {
+        display: block;
+    }
+    display: block;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .tutors, .teaser-videos {
+        width: 100%;
+    }
+}
