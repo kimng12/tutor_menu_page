@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tutor Profile Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>THIS HEADER CREATED BY OTHERS</h1>
-    </header>
     <main>
-        <div class="main-header">
-            <h2>Available Tutors</h2>
-        </div>
-        <HR></HR>
         <div class="tutor-card">
-            <div class="tutor-profile">
-                <h3>sdvsdv</h3>
+            <div class="tutor-image">
+                <img src="profile-img.jpg" alt="Tutor Profile">
             </div>
-            <div class="button 1">
-                <h3>sdsdv</h3>
-                <h3>sdsdv</h3>
+            <div class="tutor-info">
+                <h2>Boram S.</h2>
+                <p><strong>Korean</strong></p>
+                <p>27 active students • 60 lessons</p>
+                <p>Speaks Korean (Native), English (Intermediate)</p>
+                <p class="tutor-introduction-short">Introduction: Hello, I am an experienced English tutor who specializes in...</p>
+                <p class="tutor-introduction-full" style="display:none;">Introduction: Hello, I am an experienced English tutor who specializes in teaching English as a Second Language. My teaching approach emphasizes effective communication, vocabulary building, and pronunciation. I have been tutoring English for over 10 years and have taught students of all ages and levels.</p>
+                <button class="info-button" onclick="toggleReadMore()">Read more</button>
             </div>
-            <div class="teaser-video">
-                <h3>akjdnvkjdvn</h3>
-            </div>
-            <div class="button 2">
-                <h3>sdjvnskdjvnkjwnv</h3>
+            <div class="tutor-rating-price">
+                <div class="tutor-rating">
+                    <p id="numberRating">5.0</p>
+                    <div class="stars" id="rating"></div>
+                </div>
+                <div class="tutor-price">
+                    <p>₩291,234</p>
+                    <p>50-min lesson</p>
+                </div>
+                <div class="tutor-booking">
+                    <button class="book-button">Book trial lesson</button>
+                    <button class="message-button">Send message</button>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <h1>THIS FOOTER CREATED BY OTHERS</h1>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
