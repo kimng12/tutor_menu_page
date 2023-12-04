@@ -1,60 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Tutoring</title>
-    <link rel="stylesheet" href="test.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutor Profile Card</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>This Header Was Created By Other Members</h1>
-    </header>
-    <!--Tutors-->
-    <section id="tutors">
-        <h2>Tutors</h2>
-        <div class="tutor-container">
-            <div class="tutor-card">
-                <div class="profile-pic">
-                    <img src="/icon/Tutor-Pic.png" alt="Tutor-Pic">
-                </div>
-                <div class="tutor-info">
-                    <h3>Tutor's Name</h3>
-                    <p>
-                        <img src="/icon/Qualification.png" alt="Qualification">
-                        Tutor's Qualification:
-                    </p>
-                    <p>
-                        <img src="/icon/Students.png" alt="Students">
-                        Number of Students:
-                    </p>
-                    <p>
-                        <img src="/icon/Lesson.png" alt="Lesson">
-                        Number of Lessons:
-                    </p>
-                </div>
-                <div class="tutor-description">
-                    <p>kjvnkdjvsjdvkjwevkjsndvkjsndvksjndveijnskjdnv</p>
-                </div>
-                <div class="view-button">
-                    <button class="profile-button">View Profile</button>
-                    <button class="schedule-button">View Schedule</button>
-                </div>
-                <div class="video-teaser">
-                    <video width="320" height="240" controls>
-                        <source src="path_to_tutor_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <footer>
-        <a href="#top"><i class="fa fa-arrow-up"></i></a>
-        This Footer Was Created By Other Members
-    </footer>
-
-    <script src="test.js"></script>
+<div class="profile-card">
+  <div class="profile-image"></div>
+  <div class="profile-info">
+    <h1 id="tutor-name">Tutor Name</h1>
+    <p id="course-taught">Course Taught</p>
+    <p id="active-students">27 active students</p>
+    <p id="tutor-intro">Tutor Introduction</p>
+  </div>
+  <div class="profile-actions">
+    <span id="tutor-rating">5.0</span>
+    <span id="course-price">$291.234</span>
+    <button id="book-trial">Book Trial Lesson</button>
+    <button id="more-info">Show More Information</button>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
