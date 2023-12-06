@@ -126,5 +126,40 @@ body {
 
 #filterForm button {
     padding: 5px 10px;
+/* Add your filter form styling here */
+}
+#filterForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
+#filterForm label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+#filterForm input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+#filterForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff69b4;
+    cursor: pointer;
+}
+
+#filterForm button:hover {
+    background-color: #d65897;
+}
