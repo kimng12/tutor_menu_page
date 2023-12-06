@@ -114,3 +114,17 @@ body {
 }
 
 /* Add your star styling here */
+
+#filterForm {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filterForm label, #filterForm input {
+    margin-right: 10px;
+}
+
+#filterForm button {
+    padding: 5px 10px;
+}
+
