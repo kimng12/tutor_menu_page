@@ -163,3 +163,6 @@ body {
 #filterForm button:hover {
     background-color: #d65897;
 }
+a {
+    text-decoration: none;
+}

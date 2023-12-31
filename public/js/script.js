@@ -63,6 +63,3 @@ document.getElementById('filterForm').onsubmit = function(event) {
     event.preventDefault(); // Prevent the form from submitting the traditional way
     applyFilter();
 };
-
-
-
